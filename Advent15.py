@@ -33,7 +33,7 @@ def dijkstra(grid):
 
 
 # Input file name
-input_file = "path/TextToSpeechPrototype/input.txt"
+input_file = "input.txt"
 
 # Output file name
 output_file = "output.txt"
@@ -69,9 +69,9 @@ for row in grid:
     print(row)
 #
 
-
-# Example grid
-# grid = [[1, 2, 1], [4, 2, 1], [7, 2, 2]]
+# Get the startpoint
+start_point_integer = [grid[0][0]]
+print("First integers:", start_point_integer)
 
 result = dijkstra(grid)
-print("Lowest risk:", result)
+print("Lowest risk:", result - start_point_integer[0])
