@@ -14,6 +14,9 @@ with open(input_file) as my_file:
 
 print (input_file_array[3])
 
-for line in input_file_array:
-    if line[1] > line[0]:
+for i in range(1,len(input_file_array)):
+    if input_file_array[i] > input_file_array[i-1]:
         increasedDept+=1
+        print(increasedDept)
+
+print(increasedDept + 1)
